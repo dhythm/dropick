@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C10466BB8D836483B5B05C7 /* Pods_DroPickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF50B267E2BF6A7D1E4D3C6 /* Pods_DroPickTests.framework */; };
+		7BEDCA9E4A6B5B44B2A1A56A /* Pods_DroPick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509B0F1ED9BC1C0680C6E51 /* Pods_DroPick.framework */; };
+		C02F64AA1E582147008A19EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F64A91E582147008A19EA /* MapKit.framework */; };
+		C02F64AC1E5F0571008A19EA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F64AB1E5F0571008A19EA /* SettingViewController.swift */; };
+		C02F64AE1E61C557008A19EA /* SelectCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F64AD1E61C557008A19EA /* SelectCarViewController.swift */; };
+		C0AC8E6E1E57ECD2003235A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC8E6D1E57ECD2003235A0 /* AppDelegate.swift */; };
+		C0AC8E701E57ECD2003235A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC8E6F1E57ECD2003235A0 /* ViewController.swift */; };
+		C0AC8E751E57ECD2003235A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AC8E741E57ECD2003235A0 /* Assets.xcassets */; };
+		C0AC8E781E57ECD2003235A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AC8E761E57ECD2003235A0 /* LaunchScreen.storyboard */; };
+		C0AC8E831E57ECD2003235A0 /* DroPickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC8E821E57ECD2003235A0 /* DroPickTests.swift */; };
+		C0AC8E8E1E57ECD2003235A0 /* DroPickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC8E8D1E57ECD2003235A0 /* DroPickUITests.swift */; };
+		C0AC8E9C1E57F049003235A0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC8E9B1E57F049003235A0 /* MapViewController.swift */; };
+		E4AA409C6BFF8A235A6C32E5 /* Pods_DroPickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAC8D995194FD246F2CAA68 /* Pods_DroPickUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0AC8E7F1E57ECD2003235A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0AC8E621E57ECD2003235A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0AC8E691E57ECD2003235A0;
+			remoteInfo = DroPick;
+		};
+		C0AC8E8A1E57ECD2003235A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0AC8E621E57ECD2003235A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0AC8E691E57ECD2003235A0;
+			remoteInfo = DroPick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		299E5A8C1990492DF54EEC8E /* Pods-DroPick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroPick/Pods-DroPick.debug.xcconfig"; sourceTree = "<group>"; };
+		43F5628BFBDE7D49D06C7995 /* Pods-DroPickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroPickTests/Pods-DroPickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46177E6B3FDDFF29E68475C1 /* Pods-DroPickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DroPickUITests/Pods-DroPickUITests.release.xcconfig"; sourceTree = "<group>"; };
+		71C8011EBA90D7D0095BB744 /* Pods-DroPickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DroPickTests/Pods-DroPickTests.release.xcconfig"; sourceTree = "<group>"; };
+		7509B0F1ED9BC1C0680C6E51 /* Pods_DroPick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroPick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923ABD8ACB5FCADF55894181 /* Pods-DroPickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPickUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroPickUITests/Pods-DroPickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAA9DCFBE9D966BB39DB70DF /* Pods-DroPick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroPick.release.xcconfig"; path = "Pods/Target Support Files/Pods-DroPick/Pods-DroPick.release.xcconfig"; sourceTree = "<group>"; };
+		BFAC8D995194FD246F2CAA68 /* Pods_DroPickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroPickUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02F64A91E582147008A19EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C02F64AB1E5F0571008A19EA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C02F64AD1E61C557008A19EA /* SelectCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCarViewController.swift; sourceTree = "<group>"; };
+		C0AC8E6A1E57ECD2003235A0 /* DroPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AC8E6D1E57ECD2003235A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0AC8E6F1E57ECD2003235A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0AC8E741E57ECD2003235A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0AC8E771E57ECD2003235A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0AC8E791E57ECD2003235A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AC8E7E1E57ECD2003235A0 /* DroPickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroPickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AC8E821E57ECD2003235A0 /* DroPickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroPickTests.swift; sourceTree = "<group>"; };
+		C0AC8E841E57ECD2003235A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AC8E891E57ECD2003235A0 /* DroPickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroPickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AC8E8D1E57ECD2003235A0 /* DroPickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroPickUITests.swift; sourceTree = "<group>"; };
+		C0AC8E8F1E57ECD2003235A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AC8E9B1E57F049003235A0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DAF50B267E2BF6A7D1E4D3C6 /* Pods_DroPickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroPickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0AC8E671E57ECD2003235A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F64AA1E582147008A19EA /* MapKit.framework in Frameworks */,
+				7BEDCA9E4A6B5B44B2A1A56A /* Pods_DroPick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E7B1E57ECD2003235A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C10466BB8D836483B5B05C7 /* Pods_DroPickTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E861E57ECD2003235A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AA409C6BFF8A235A6C32E5 /* Pods_DroPickUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0AC8E611E57ECD2003235A0 = {
+			isa = PBXGroup;
+			children = (
+				C0AC8E6C1E57ECD2003235A0 /* DroPick */,
+				C0AC8E811E57ECD2003235A0 /* DroPickTests */,
+				C0AC8E8C1E57ECD2003235A0 /* DroPickUITests */,
+				C0AC8E6B1E57ECD2003235A0 /* Products */,
+				F85579204DD1552FF0911DDA /* Pods */,
+				D9D22F5B47FD83DA92E77D25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0AC8E6B1E57ECD2003235A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC8E6A1E57ECD2003235A0 /* DroPick.app */,
+				C0AC8E7E1E57ECD2003235A0 /* DroPickTests.xctest */,
+				C0AC8E891E57ECD2003235A0 /* DroPickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0AC8E6C1E57ECD2003235A0 /* DroPick */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC8E6D1E57ECD2003235A0 /* AppDelegate.swift */,
+				C0AC8E6F1E57ECD2003235A0 /* ViewController.swift */,
+				C0AC8E9B1E57F049003235A0 /* MapViewController.swift */,
+				C02F64AB1E5F0571008A19EA /* SettingViewController.swift */,
+				C02F64AD1E61C557008A19EA /* SelectCarViewController.swift */,
+				C0AC8E741E57ECD2003235A0 /* Assets.xcassets */,
+				C0AC8E761E57ECD2003235A0 /* LaunchScreen.storyboard */,
+				C0AC8E791E57ECD2003235A0 /* Info.plist */,
+			);
+			path = DroPick;
+			sourceTree = "<group>";
+		};
+		C0AC8E811E57ECD2003235A0 /* DroPickTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC8E821E57ECD2003235A0 /* DroPickTests.swift */,
+				C0AC8E841E57ECD2003235A0 /* Info.plist */,
+			);
+			path = DroPickTests;
+			sourceTree = "<group>";
+		};
+		C0AC8E8C1E57ECD2003235A0 /* DroPickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC8E8D1E57ECD2003235A0 /* DroPickUITests.swift */,
+				C0AC8E8F1E57ECD2003235A0 /* Info.plist */,
+			);
+			path = DroPickUITests;
+			sourceTree = "<group>";
+		};
+		D9D22F5B47FD83DA92E77D25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C02F64A91E582147008A19EA /* MapKit.framework */,
+				7509B0F1ED9BC1C0680C6E51 /* Pods_DroPick.framework */,
+				DAF50B267E2BF6A7D1E4D3C6 /* Pods_DroPickTests.framework */,
+				BFAC8D995194FD246F2CAA68 /* Pods_DroPickUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85579204DD1552FF0911DDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				299E5A8C1990492DF54EEC8E /* Pods-DroPick.debug.xcconfig */,
+				AAA9DCFBE9D966BB39DB70DF /* Pods-DroPick.release.xcconfig */,
+				43F5628BFBDE7D49D06C7995 /* Pods-DroPickTests.debug.xcconfig */,
+				71C8011EBA90D7D0095BB744 /* Pods-DroPickTests.release.xcconfig */,
+				923ABD8ACB5FCADF55894181 /* Pods-DroPickUITests.debug.xcconfig */,
+				46177E6B3FDDFF29E68475C1 /* Pods-DroPickUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0AC8E691E57ECD2003235A0 /* DroPick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0AC8E921E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPick" */;
+			buildPhases = (
+				AFB594A750E8C091B9B1FBE3 /* [CP] Check Pods Manifest.lock */,
+				C0AC8E661E57ECD2003235A0 /* Sources */,
+				C0AC8E671E57ECD2003235A0 /* Frameworks */,
+				C0AC8E681E57ECD2003235A0 /* Resources */,
+				96EC9CDB0E21441949737FD6 /* [CP] Embed Pods Frameworks */,
+				AFF804BF1D5E430A1C54B4FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroPick;
+			productName = DroPick;
+			productReference = C0AC8E6A1E57ECD2003235A0 /* DroPick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0AC8E7D1E57ECD2003235A0 /* DroPickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0AC8E951E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPickTests" */;
+			buildPhases = (
+				AB34B1B6D9A5019FF831B083 /* [CP] Check Pods Manifest.lock */,
+				C0AC8E7A1E57ECD2003235A0 /* Sources */,
+				C0AC8E7B1E57ECD2003235A0 /* Frameworks */,
+				C0AC8E7C1E57ECD2003235A0 /* Resources */,
+				AB574B08FE7BA3B955BC5875 /* [CP] Embed Pods Frameworks */,
+				F2A54794E5F7A764F8E931CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0AC8E801E57ECD2003235A0 /* PBXTargetDependency */,
+			);
+			name = DroPickTests;
+			productName = DroPickTests;
+			productReference = C0AC8E7E1E57ECD2003235A0 /* DroPickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0AC8E881E57ECD2003235A0 /* DroPickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0AC8E981E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPickUITests" */;
+			buildPhases = (
+				033FAE52284DB52145E7937A /* [CP] Check Pods Manifest.lock */,
+				C0AC8E851E57ECD2003235A0 /* Sources */,
+				C0AC8E861E57ECD2003235A0 /* Frameworks */,
+				C0AC8E871E57ECD2003235A0 /* Resources */,
+				376244E16F99ED10CF2E0FF3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0AC8E8B1E57ECD2003235A0 /* PBXTargetDependency */,
+			);
+			name = DroPickUITests;
+			productName = DroPickUITests;
+			productReference = C0AC8E891E57ECD2003235A0 /* DroPickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0AC8E621E57ECD2003235A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = dhythm;
+				TargetAttributes = {
+					C0AC8E691E57ECD2003235A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RHU8MWRJAK;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					C0AC8E7D1E57ECD2003235A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0AC8E691E57ECD2003235A0;
+					};
+					C0AC8E881E57ECD2003235A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0AC8E691E57ECD2003235A0;
+					};
+				};
+			};
+			buildConfigurationList = C0AC8E651E57ECD2003235A0 /* Build configuration list for PBXProject "DroPick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0AC8E611E57ECD2003235A0;
+			productRefGroup = C0AC8E6B1E57ECD2003235A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0AC8E691E57ECD2003235A0 /* DroPick */,
+				C0AC8E7D1E57ECD2003235A0 /* DroPickTests */,
+				C0AC8E881E57ECD2003235A0 /* DroPickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0AC8E681E57ECD2003235A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AC8E781E57ECD2003235A0 /* LaunchScreen.storyboard in Resources */,
+				C0AC8E751E57ECD2003235A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E7C1E57ECD2003235A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E871E57ECD2003235A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033FAE52284DB52145E7937A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		376244E16F99ED10CF2E0FF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroPickUITests/Pods-DroPickUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96EC9CDB0E21441949737FD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroPick/Pods-DroPick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB34B1B6D9A5019FF831B083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB574B08FE7BA3B955BC5875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroPickTests/Pods-DroPickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFB594A750E8C091B9B1FBE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF804BF1D5E430A1C54B4FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroPick/Pods-DroPick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A54794E5F7A764F8E931CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroPickTests/Pods-DroPickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0AC8E661E57ECD2003235A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F64AE1E61C557008A19EA /* SelectCarViewController.swift in Sources */,
+				C0AC8E701E57ECD2003235A0 /* ViewController.swift in Sources */,
+				C0AC8E9C1E57F049003235A0 /* MapViewController.swift in Sources */,
+				C0AC8E6E1E57ECD2003235A0 /* AppDelegate.swift in Sources */,
+				C02F64AC1E5F0571008A19EA /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E7A1E57ECD2003235A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AC8E831E57ECD2003235A0 /* DroPickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AC8E851E57ECD2003235A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AC8E8E1E57ECD2003235A0 /* DroPickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0AC8E801E57ECD2003235A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0AC8E691E57ECD2003235A0 /* DroPick */;
+			targetProxy = C0AC8E7F1E57ECD2003235A0 /* PBXContainerItemProxy */;
+		};
+		C0AC8E8B1E57ECD2003235A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0AC8E691E57ECD2003235A0 /* DroPick */;
+			targetProxy = C0AC8E8A1E57ECD2003235A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0AC8E761E57ECD2003235A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0AC8E771E57ECD2003235A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0AC8E901E57ECD2003235A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0AC8E911E57ECD2003235A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0AC8E931E57ECD2003235A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299E5A8C1990492DF54EEC8E /* Pods-DroPick.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RHU8MWRJAK;
+				INFOPLIST_FILE = DroPick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C0AC8E941E57ECD2003235A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA9DCFBE9D966BB39DB70DF /* Pods-DroPick.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RHU8MWRJAK;
+				INFOPLIST_FILE = DroPick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C0AC8E961E57ECD2003235A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F5628BFBDE7D49D06C7995 /* Pods-DroPickTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DroPickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroPick.app/DroPick";
+			};
+			name = Debug;
+		};
+		C0AC8E971E57ECD2003235A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C8011EBA90D7D0095BB744 /* Pods-DroPickTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DroPickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroPick.app/DroPick";
+			};
+			name = Release;
+		};
+		C0AC8E991E57ECD2003235A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923ABD8ACB5FCADF55894181 /* Pods-DroPickUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DroPickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DroPick;
+			};
+			name = Debug;
+		};
+		C0AC8E9A1E57ECD2003235A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46177E6B3FDDFF29E68475C1 /* Pods-DroPickUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DroPickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhythm.DroPickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DroPick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0AC8E651E57ECD2003235A0 /* Build configuration list for PBXProject "DroPick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0AC8E901E57ECD2003235A0 /* Debug */,
+				C0AC8E911E57ECD2003235A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0AC8E921E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0AC8E931E57ECD2003235A0 /* Debug */,
+				C0AC8E941E57ECD2003235A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0AC8E951E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0AC8E961E57ECD2003235A0 /* Debug */,
+				C0AC8E971E57ECD2003235A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0AC8E981E57ECD2003235A0 /* Build configuration list for PBXNativeTarget "DroPickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0AC8E991E57ECD2003235A0 /* Debug */,
+				C0AC8E9A1E57ECD2003235A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0AC8E621E57ECD2003235A0 /* Project object */;
+}
